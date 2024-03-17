@@ -75,7 +75,7 @@ li img{
     border-radius: 6px;
     color:white;
     background-color:rgb(16, 191, 235);
-    display: inline-block;
+    display:flex;
     font-weight: bold;
     justify-content: center;
     align-content: center;
@@ -275,3 +275,44 @@ li img{
     font-size: 0.8em;
     font-weight: 400;
 }
+.racist{
+    height:243px;
+    background-color: rgba(0, 0, 0, 0.746);
+    display: grid;
+    grid-template-columns: 2;
+    grid-template-rows: 3;
+}
+.parag1{
+    grid-row: 1/1;
+    grid-column: 1/1;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.email{
+    grid-row: 1/1;
+    grid-column: 2/2;
+    height:72px;
+    display: flex;
+    width:50vw;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+/* .parag2{
+    grid-row: 2/2;
+    display: flex;
+    grid-column: 1/2;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.parag3{
+    grid-row: 3/3;
+    display: flex;
+    grid-column: 1/2;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+} */

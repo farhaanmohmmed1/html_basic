@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transform</title>
+    <style>
+        .container{
+           width: 90vw;
+           margin-top: 20vh;
+           margin-left: 5vw;
+           border:1px solid black;
+/* height: 60vw; */
+display:grid;
+grid-template-columns: 3;
+grid-template-rows: 4;
+
+
+        }
+        .box1{
+            grid-row: 1/1;
+            grid-column: 1/1;
+            margin: 12px 7px;
+            width:15vw;
+            background-color: #ddd;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        .box1:hover{
+            transform: scaleX(1.4);
+            transition: 0.5s;
+        }
+           .box2{
+            grid-row: 1/1;
+            grid-column: 2/2;
+            margin: 12px 12px;
+        
+            width:15vw;
+            height:15vh;
+            background-color: #ddd;
+             display:flex;
+            justify-content: center;
+            align-items: center;
+            
+        }.box2:hover{
+            transform: scaley(1.4);
+            transition: 0.5s;
+        }
+   .box3{
+            grid-row: 1/1;
+            grid-column: 3/3;
+            margin: 12px 12px;
+         display:flex;
+            justify-content: center;
+            align-items: center;
+            width:15vw;
+            height:15vh;
+            background-color: #ddd;
+            
+        }
+        .box3:hover{
+            transform: scale(1.4);
+            transition: 0.5s;
+        }
+           .box4{
+            grid-row: 1/1; display:flex;
+            justify-content: center;
+            align-items: center;
+            grid-column: 4/4;
+            margin: 12px 12px;
+         
+            width:15vw;
+            height:15vh;
+            background-color: #ddd;
+            
+        }
+        .box4:hover{
+            transform: translateX(2em);
+            transition:  0.5s ;        }
+           .box5{ display:flex;
+            justify-content: center;
+            align-items: center;
+            grid-row: 2/2;
+            grid-column: 1/1;
+            margin: 12px 12px;
+         
+            width:15vw;
+            height:15vh;
+            background-color: #ddd;
+            
+        }
+        .box5:hover{
+            transform: translateY(2em);
+            transition:  0.5s ;        }
+            .box6{
+            grid-row: 2/2;
+            grid-column: 2/2;
+            margin: 12px 12px; display:flex;
+            justify-content: center;
+            align-items: center;
+         
+            width:15vw;
+            height:15vh;
+            background-color: #ddd;
+            
+        }
+        .box6:hover{
+            transform: translate(2em,1.5em);
+            transition:  0.5s ;        }
+            .box7{
+            grid-row: 2/2;
+            grid-column: 3/3;
+            margin: 12px 12px;
+          display:flex;
+            justify-content: center;
+            align-items: center;
+            width:15vw;
+            height:15vh;
+            background-color: #ddd;
+            
+        }
+        .box7:hover{
+            transform: matrix(1,-1,0,1,0,0);
+            transition:  0.5s ;        }
+            .box8{
+            grid-row: 2/2;
+            grid-column: 4/4;
+            margin: 12px 12px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width:15vw;
+            height:15vh;
+            background-color: #ddd;
+            
+        }
+        .box8:hover{
+            transform: rotate(90deg);
+            transition:  0.5s ;        }
+            .box9{
+            grid-row: 3/3;
+            grid-column: 1/1;
+            margin: 12px 12px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width:15vw;
+            height:15vh;
+            background-color: #ddd;
+            
+        }
+        .box9:hover{
+            transform: skew(45deg,45deg);
+            transition:  0.5s ;        }
+
+            .box10{
+            grid-row: 3/3;
+            grid-column: 2/2;
+            margin: 12px 12px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width:15vw;
+            height:15vh;
+            background-color: #ddd;
+            
+        }
+        .box10:hover{
+            transform: skewX(45deg);
+            transition:  0.5s ;        }
+            .box11{
+            grid-row: 3/3;
+            grid-column: 3/3;
+            margin: 12px 12px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width:15vw;
+            height:15vh;
+            background-color: #ddd;
+            
+        }
+        .box11:hover{
+            transform: skewY(60deg);
+            transition:  0.5s ;        }
+            .box12{
+            grid-row: 3/3;
+            grid-column: 4/4;
+            margin: 12px 12px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width:15vw;
+            height:15vh;
+            background-color: #ddd;
+            
+        }
+        .box8:hover {
+transform : matrix3d(0.8535533905932737,0.4999999999999999,0.14644660940672619,0,-0.4999999999999999,0.7071067811865476,0.4999999999999999,0,0.14644660940672619,-0.4999999999999999,0.8535533905932737,0,22.62994231491119,-20.3223304703363,101.3700576850888,1);
+transition : 0.5s;
+}
+            .box13{
+            grid-row: 4/4;
+            grid-column: 1/1;
+            margin: 12px 12px;
+            display:flex;
+            justify-content: center;
+            align-items: center; display:flex;
+            justify-content: center;
+            align-items: center;
+            width:15vw;
+            height:15vh;
+            background-color: #ddd;
+            
+        }
+        .box13:hover{ transform: translate3d(1px, 1px, 50px) rotate3d(3, 2, 2, 90deg);
+            transition:  0.5s ;        }
+          .box14{
+            grid-row: 4/4;
+            grid-column: 2/2;
+            margin: 12px 12px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width:15vw;
+            height:15vh;
+            background-color: #ddd;
+            
+        } 
+        .box14:hover{
+transform: rotateX(45deg);
+transition: 0.5s;        }     
+        .box15{
+            grid-row: 4/4;
+            grid-column: 3/3;
+            margin: 12px 12px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width:15vw;
+            height:15vh;
+            background-color: #ddd;
+            
+        } 
+        .box15:hover{
+transform: rotateY(45deg);
+transition: 0.5s;        }      
+        .box16{
+            grid-row: 4/4;
+            grid-column: 4/4;
+            margin: 12px 12px;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            width:15vw;
+            height:15vh;
+            background-color: #ddd;
+            
+        }
+        .box16:hover{ transform: rotate3d(3, 2, 2, 90deg) translateZ(50px);
+transition: 0.5s;        }     
+        .box:hover{
+            background-color: rgba(0, 204, 255, 0.623);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box1 blue scalex box">scalex</div>
+        <div class="box2 box blue scaley">scaley</div>
+        <div class="box3 box blue">scale</div>
+        <div class="box4 box blue">translatex</div>
+        <div class="box5 box blue">translatey</div>
+        <div class="box6 box blue">translate</div>
+        <div class="box7 box blue">matrix</div>
+        <div class="box8 box blue">rotate</div>
+        <div class="box9 box blue">skew</div>
+        <div class="box10 box blue">skewx</div>
+        <div class="box11 box">skewy</div>
+        <div class="box12 box">matrix3d</div>
+        <div class="box13 box">translate3d</div>
+        <div class="box14 box">rotatex</div>
+        <div class="box15 box">rotatey</div>
+        <div class="box16 box">translatez</div>
+    </div>
+</body>
+</html>
