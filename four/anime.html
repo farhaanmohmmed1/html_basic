@@ -1,13 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CSS transition</title>
+    <title>CSS Anime</title>
     <style>
-        :root{
-            --val: translate(5em,5em) skew(20deg,20deg)
-        }
         *{
             margin: 0;
             padding: 0;
@@ -16,8 +14,12 @@
             width:100vw;
             height:60vh;
             border:2px solid black;
+            display: flex;
+            flex-direction: column-reverse;
+            
         }
         .ball{
+            margin:25px 25px;
             border:2px solid purple;
             border-radius: 19px;
             width:32px;
@@ -26,22 +28,31 @@
             justify-content: center;
             align-items: center;
             background: aqua;
-            transition: all 3s ease-in-out 1s;
-            /* transition-property:  translate(5em,5em) skew(20deg,20deg);
-            transition-duration: 5s;
-            transition-timing-function: ease-in-out;
-            transition-delay: 2s; */
-            /* transform: var(--val); */
-            /* transition-property: transform;
-            transition-duration: 3s;
-            transition-timing-function: ease-in-out;
-            transition-delay: 1s; */
+            /* transition: all 3s ease-in-out 1s; */
+        animation: bounce 3s;
+       
         }
-.lol{
-    transform:  translate(5em,5em) skew(20deg,20deg);
-}
+        @keyframes bounce {
+                from{
+
+                }
+                to{
+
+                    translate:7em -18em;
+                }
+            
+        }
+        @keyframes bounce2 {
+            from{
+                translate:7em -18em;
+            }
+            to{
+                translate:7em 18em;
+            }
+        }
     </style>
 </head>
+
 <body>
     <div class="container">
         <div class="ball lol">
@@ -49,4 +60,5 @@
         </div>
     </div>
 </body>
+
 </html>
