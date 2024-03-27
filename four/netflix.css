@@ -1,0 +1,24 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background-image: url("head.jpg");
+    height:100vh;
+
+}
+header .box{
+    height:100vh;
+    opacity: 0.74;
+    background-color: black;
+    position: absolute;
+}
+.logo1{
+    position: relative;
+    color: rgb(229,9,20);
+
+}
+.logo1 img{
+    width: 148px;
+}
