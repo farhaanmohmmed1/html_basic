@@ -14,11 +14,8 @@ header .box{
     background-color: black;
     position: absolute;
 }
-.logo1{
-    position: relative;
-    color: rgb(229,9,20);
-
-}
-.logo1 img{
-    width: 148px;
+nav svg{
+    width:148px;
+    margin: 12px 26px;
+    color: red;
 }
