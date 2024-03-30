@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial Problem</title>
+</head>
+<body>
+    <script>
+        console.log("Factorial Problem")
+        let a =prompt("enter a number: ")
+        let val=1;
+for (let i = 1; i <= a; i++) {
+  val=val*i
+ }
+console.log(val)
+let array=[]
+for (let index = 1; index <= a; index++) {
+ array.push(index) 
+ 
+}
+let v=array.reduce((i,j)=> i*j,1)
+console.log(val)
+</script>
+</body>
+</html>
