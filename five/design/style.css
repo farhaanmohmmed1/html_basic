@@ -1,0 +1,39 @@
+body{margin: 0;padding: 0;
+    background-color: black;
+    color: white;
+    font-family: 'Segoe UI';
+}
+.image{
+    position: absolute;
+    height: 110px;
+    object-fit: contain;
+}
+.time{
+    position: relative;
+    top: -24px;
+    left: 151px;
+    background: black;
+    width: 37px;
+}
+.container{  
+display: flex;
+flex-direction: row;height: 110px;
+border: 1px solid rgba(0, 255, 255, 0.521);
+}
+.data {
+    display: flex;
+    position: relative;
+    left: 187px;
+
+    flex-direction: column;
+}
+
+.expection {
+   
+    display: flex;
+    flex-direction: row;
+}
+.lol{
+    display: flex;
+    flex-direction: row;
+}

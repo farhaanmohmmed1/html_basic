@@ -1,21 +1,37 @@
-
 *{
-    margin: 0;
-    padding: 0;
+    padding: 0;margin: 0;
 }
 header{
-    background-image: url("head.jpg");
-    height:100vh;
-
+    background-image: url('head.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: max(1200px,100vw);
+    height: 80vh;
+    position: relative;
 }
 header .box{
-    height:100vh;
-    opacity: 0.74;
+    height: 80vh;
+    width:100%;
+    opacity: 0.2;
     background-color: black;
     position: absolute;
+    top:0;
 }
-nav svg{
-    width:148px;
-    margin: 12px 26px;
-    color: red;
+nav{
+    position: relative;
+    top:13px;
+    height:62px;
+    max-width: 70vw;
+ margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+nav img{
+    position: relative;
+    z-index: 3;
+}
+nav button{
+    position: relative;
+    z-index: 3;
 }
