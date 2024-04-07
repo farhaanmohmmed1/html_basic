@@ -1,37 +1,132 @@
-*{
-    padding: 0;margin: 0;
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI';
 }
-header{
+
+body {
+    background-color: black;
+}
+
+.button {
+    display: flex;
+    gap: 29px;
+}
+
+.button :nth-child(1) {
+    border: 1px solid gray;
+    height: 34px;
+    width: 120px;
+    border-radius: 4px;
+    background-color: rgba(0, 0, 0, 0.68);
+    color: white;
+}
+
+.button :nth-child(2) {
+    height: 34px;
+    width: 75px;
+    background-color: red;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    color: white;cursor: pointer;
+}
+
+header {
     background-image: url('head.jpg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: max(1200px,100vw);
-    height: 80vh;
+    background-size: max(1200px, 100vw);
+    height: 90vh;
     position: relative;
 }
-header .box{
-    height: 80vh;
-    width:100%;
+
+header .box {
+    height: 90vh;
+    width: 100%;
     opacity: 0.2;
     background-color: black;
     position: absolute;
-    top:0;
+    top: 0;
 }
-nav{
+
+nav {
     position: relative;
-    top:13px;
-    height:62px;
+    top: 13px;
+    height: 62px;
     max-width: 70vw;
- margin: auto;
+    margin: auto;
     display: flex;
     justify-content: space-between;
-    align-items:center;
+    align-items: center;
 }
-nav img{
+
+nav img {
+    position: relative;
+    left: -40px;
+    z-index: 3;
+}
+
+nav button {
     position: relative;
     z-index: 3;
 }
-nav button{
+
+.con1 {
     position: relative;
     z-index: 3;
+    color: rgb(255, 255, 255);
+    height: 89%;
+    display: flex;
+    gap: 21px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.con1> :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.con1> :nth-child(2) {
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.con1> :nth-child(3) {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.con1> :nth-child(4)> :nth-child(1) {
+    border: 1px solid gray;
+    border-radius: 4px;
+    padding-left: 7px;
+    height: 45px;
+    width: 350px;
+    color: gray;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: rgba(0, 0, 0, 0.4);cursor: text;
+}
+
+.con1> :nth-child(4)> :nth-child(2) {
+    background-color: red;cursor:  pointer;
+    position: relative;
+    top: -1px;
+    font-size: 24px;
+    font-weight: 500;
+    border: none;
+    border-radius: 7px;
+    height: 47px;
+    width: 200px
+}
+
+.sep {
+    position: relative;
+    top: -2px;
+    background-color: rgba(128, 128, 128, 0.25);
+    height: 7px;
 }
