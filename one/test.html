@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+*{margin: 0;padding: 0; background-color: black;}
+img{
+    position: absolute;
+    height:400px;
+}
+.div{
+    /* background-color: red; */
+    height:90px;
+    width:290px;
+    position: relative;
+    z-index: 3;
+    border: 2px solid gray;
+    border-radius: 19px;
+    left:125px;
+    top:270px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+align-items: center;
+
+}
+div>img{
+    height: 75px;
+    position: relative;
+ 
+    
+    border-radius: 3px;
+}
+.lol{
+    color: white;
+    z-index: 4;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    
+}
+.gif{
+    height: 60px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gif> img{
+height: 40px;
+}
+.blue{
+    color: rgba(0, 0, 255, 0.293);
+}
+</style>
+</head>
+<body>
+    <img src="/four/mob.jpg" alt="">
+    <div class="div"><img src="/four/logo.png" alt="">
+    <div class="lol">
+        <span>Stranger Things</span>
+        <span class="blue">Downloading...</span>
+    </div>
+<div class="gif"><img src="/four/download-icon.gif" alt=""></div>
+</div>
+</body>
